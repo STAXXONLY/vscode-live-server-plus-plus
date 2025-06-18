@@ -1,4 +1,4 @@
-<p align="center">
+< align="center">
   <img width="128" height="128" src="https://raw.githubusercontent.com/ritwickdey/vscode-live-server-plus-plus/master/images/vscode-live-server-plus-plus.png">
 </p>
 <h3 align="center">Vscode Live Server++ (BETA) </h3>
@@ -48,7 +48,7 @@
   - Initial release
   - hot Reload supported
   - No need to save
-  - 5 settings are added (Port, Root, indexFile, timeout, browser)
+  - 5 settings are added (Port\, Root, indexFile, timeout, browser)
 
 ---
 
@@ -60,11 +60,11 @@ To check full changelog [click here](CHANGELOG.md).
 
 ## Why `Live Server++` when there is a `Live Server` ?
 
-Actually, I was receiving a lot of emails, PR, comments (and also there was few issue request, e.g. [#12080](https://github.com/Microsoft/vscode/issues/12080)) - `why auto reload only happens when we save the file`? - `why it's not realtime?`... blah blah....
+Actually, I was receiving a lot of emails, l  comments (and also there was few issue request, e.g. [#12080](https://github.com/Microsoft/vscode/issues/12080)) - `why auto reload only happens when we save the file`? - `why it's not realtime?`... blah blah....
 
 Well, in Live Server Extension, I'm using a popular npm module (named `live-server`) and it's the core library of Live Server. _(yaa! too many "Live Server" 😜)_. In the way it's working - it never possible auto reload without saving the file.
 
-And yaa, to be honest, when I made (in mid of `2017`) the live server extension, I didn't know Node.js or JavaScript well _(Hold on! I still don't know `Node.js` but I'm now confident)_. I even didn't know `promise`/`callback` well. I understood the `callback` _(& `callback hell` too)_ while making the extension. And `Promise`? Only I knew how to use it like `.then().then().then()` and `IIFE`? or `closure`? - I didn't even hear about those names at that time. 😬
+And yaa, to be honest, when I made (in mid of `2017`) the live server extension, I didn't know Node.js or JavaScript well _(Hold on! I still don't know `Node.js` but I'm now confident)_. I even didn't know ``/`callback` well. I understood the `callback` _(& `callback hell` too)_ while making the extension. And `? Only I knew how to use it like `.then().then().then()` and `IIFE`? or `closure`? - I didn't even hear about those names at that time. 😬
 
 Okay, now coming to the point, Code of the `Live Server` can't be migrated with `Live Server++`. `Live Server++` is not depended on `live-server`(the npm module) - I've written the server side code from scratch & it has minimal dependency (still under development).
 
